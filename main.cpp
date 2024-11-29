@@ -24,13 +24,13 @@ ifstream filetxt("1.txt");
     while(getline(filetxt,str)){
         v1.push_back(str);
         cout<<str<<endl;
-}
+}}
 
 void f_3(){
-    ofstream out2("1out.txt");
+    ofstream out1("1out.txt");
     string str1 = out1.str();
-    out2.write(str1.c_str(), str1.size());
-    out2.close();
+    out1.write(str1.c_str(), str1.size());
+    out1.close();
 }
 
 int main(){
@@ -38,3 +38,4 @@ f_1();
 f_2();
 f_3();
 }
+}+
